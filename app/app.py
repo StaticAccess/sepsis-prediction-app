@@ -8,8 +8,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Load the model
-model_file = 'best_model.pkl'
-loaded_model = joblib.load(model_file)
+
+loaded_model = joblib.load('best_model.pkl')
 
 # Define feature names
 features = [
