@@ -93,7 +93,8 @@ For local development, you can use Flask's built-in server (not recommended for 
 
 ### Project Structure
 
-- `app.py`: Main Flask application file.
+- `app/app.py`: Main Streamlit application file if you want to run Streamlit Build.
+- `app_flask/app.py`: Main Flask application file.
 - `templates/`: Contains HTML templates for rendering web pages.
 - `requirements.txt`: List of dependencies.
 - `sample_data.csv`: Sample data used for generating random test inputs.
