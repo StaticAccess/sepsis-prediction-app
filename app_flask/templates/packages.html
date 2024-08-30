@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installed Packages</title>
+</head>
+<body>
+    <h1>Installed Python Packages</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Package Name</th>
+                <th>Version</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for package, version in packages.items() %}
+            <tr>
+                <td>{{ package }}</td>
+                <td>{{ version }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
