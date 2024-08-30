@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepsis Prediction App</title>
+</head>
+<body>
+    
+
+    <form method="post">
+        <h3>Input Features</h3>
+        {% for feature, value in input_values.items() %}
+            <label for="{{ feature }}">{{ feature }}</label>
+            <input type="number" step="any" id="{{ feature }}" name="{{ feature }}" value="{{ value }}">
+            <br><br>
+        {% endfor %}
+        
+        <button type="submit" name="random">Fill with Random Test Data</button>
+        <button type="submit" name="predict">Predict</button>
+    </form>
+
+    {% if result %}
+        <h2>Prediction Outcome: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
