@@ -8,6 +8,20 @@ This is a Flask-based web application that predicts the likelihood of sepsis in 
 - **Random Test Data**: Automatically fill in the input form with random data from a sample dataset.
 - **List Installed Packages**: View a list of installed Python packages and their versions.
 
+## Deployment
+
+The application is deployed and accessible at the following URL:
+
+- **Application:** [https://sepsis-prediction-app.onrender.com](https://sepsis-prediction-app.onrender.com)
+
+## Check Installed Packages
+
+To view the versions of all installed packages, visit:
+
+- **Packages Versions:** [https://sepsis-prediction-app.onrender.com/packages](https://sepsis-prediction-app.onrender.com/packages)
+
+
+
 ## Getting Started
 
 ### Prerequisites
