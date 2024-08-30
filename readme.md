@@ -6,7 +6,6 @@ This is a Flask-based web application that predicts the likelihood of sepsis in 
 
 - **Prediction**: Enter patient data to predict whether the patient has sepsis.
 - **Random Test Data**: Automatically fill in the input form with random data from a sample dataset.
-- **List Installed Packages**: View a list of installed Python packages and their versions.
 
 ## Deployment
 
@@ -19,8 +18,6 @@ The application is deployed and accessible at the following URL:
 To view the versions of all installed packages, visit:
 
 - **Packages Versions:** [https://sepsis-prediction-app.onrender.com/packages](https://sepsis-prediction-app.onrender.com/packages)
-
-
 
 ## Getting Started
 
@@ -59,14 +56,34 @@ Ensure you have Python 3.x installed on your system.
 
 5. Place the trained model file (`best_model.pkl`) in the root directory.
 
-### Running the Application
+### Running the Application with WSGI
 
-1. Run the Flask application:
+To run the application using a WSGI server like Gunicorn, follow these steps:
+
+1. **Install Gunicorn:**
+    ```bash
+    pip install gunicorn
+    ```
+
+2. **Run the application using Gunicorn:**
+    ```bash
+    gunicorn app:app
+    ```
+
+    - `app:app` refers to the `app` object in the `app.py` file.
+
+3. Open your web browser and navigate to `http://127.0.0.1:8000/`.
+
+### Running the Application Locally
+
+For local development, you can use Flask's built-in server (not recommended for production):
+
+1. Run the application:
     ```bash
     python app.py
     ```
 
-2. Open your web browser and navigate to `http://127.0.0.1:5000/`.
+2. Open your web browser and navigate to `http://127.0.0.1:8000/`.
 
 ### Usage
 
